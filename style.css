@@ -171,7 +171,6 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 10%;
     box-sizing: border-box;
 }
 
@@ -189,18 +188,23 @@ html {
 
 .album-h1 {
     font-size: 4rem;
-    margin-bottom: 40px;
+    text-align: center;
+    padding-top: 0;
     padding-bottom: 20px;
     border-bottom: 1px solid #ebebeb;
 }
 
 .card {
-    max-height: 80vh;
-    min-height: 50vh;
+    text-align: center;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #11010e;
+    color: #ededed;
 }
 
 .card p {
-    font-size: calc(9px + 0.3vw);;
+    font-size: calc(9px + 0.3vw);
 } 
 
 .card-img-top {
@@ -210,13 +214,39 @@ html {
     align-self: center;
 }
 
-.blue-bg {
-    background-color: #11010e;
-    color: #ededed;
+.card-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.btn-group {
+    margin-top: auto;
+    justify-content: center;
 }
 
 @keyframes showRight {
     100% {
         width: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-content .btn-box {
+        flex-direction: column; /* Stack the buttons vertically on very small screens */
+        width: 100%;
+        height: auto; /* Adjust height to fit content */
+    }
+
+    .home {
+        min-height: 100vh;
+        width: 100%;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 10%;
+        box-sizing: border-box;
     }
 }
