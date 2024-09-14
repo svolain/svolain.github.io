@@ -244,12 +244,17 @@ html {
     .home {
         min-height: 100vh;
         width: 100%;
-        background-size: cover;
+        background: #000;
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding: 0 10%;
         box-sizing: border-box;
+    }
+
+    .about-content {
+        width: 100%; /* Make the container take full width on smaller screens */
+        padding: 0 20px; /* Add padding to give some breathing space */
     }
 
     .about-img {
