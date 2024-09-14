@@ -59,24 +59,13 @@ html {
 .home {
     min-height: 100vh;
     width: 100%;
+    background: url(images/home_bg.jpeg) no-repeat center bottom;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 0 10%;
     box-sizing: border-box;
-}
-
-.home::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: url(images/home_bg.jpeg) no-repeat center bottom;
-        background-size: cover;
-        opacity: 0.3;
-        z-index: -1;
 }
 
 .home-content {
@@ -112,7 +101,7 @@ html {
     height: 100%;
     background: #070705;
     animation: showRight 1s ease forwards;
-    animation-delay: .5s;
+    animation-delay: 0.1s;
 }
 
 .home-content .btn-box {
@@ -198,9 +187,21 @@ html {
     width: 40vw;
 }
 
-.card {
-    min-height: 100vh;
+.album-h1 {
+    font-size: 4rem;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ebebeb;
 }
+
+.card {
+    max-height: 80vh;
+    min-height: 50vh;
+}
+
+.card p {
+    font-size: calc(9px + 0.3vw);;
+} 
 
 .card-img-top {
     height: 200px;
