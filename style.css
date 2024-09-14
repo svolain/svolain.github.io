@@ -179,6 +179,7 @@ html {
     width: 200px;
     border-radius: 50%;
     margin: 10% auto;
+    display: block;
 }
 
 .about-content {
@@ -249,5 +250,11 @@ html {
         justify-content: center;
         padding: 0 10%;
         box-sizing: border-box;
+    }
+
+    .about-img {
+        height: 150px;
+        width: 150px;
+        margin: 20px auto;
     }
 }
