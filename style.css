@@ -178,7 +178,7 @@ html {
     height: 200px;
     width: 200px;
     border-radius: 50%;
-    margin: 10%;
+    margin: 10% auto;
 }
 
 .about-content {
@@ -187,7 +187,7 @@ html {
 }
 
 .album-h1 {
-    font-size: 4rem;
+    font-size: calc(12px + 3vw);
     text-align: center;
     padding-top: 0;
     padding-bottom: 20px;
