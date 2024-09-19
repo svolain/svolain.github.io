@@ -238,7 +238,8 @@ html {
     .home-content .btn-box {
         flex-direction: column; /* Stack the buttons vertically on very small screens */
         width: 100%;
-        height: auto; /* Adjust height to fit content */
+        height: auto;
+        margin-bottom: 10px;
     }
 
     .home {
@@ -253,8 +254,8 @@ html {
     }
 
     .about-content {
-        width: 100%; /* Make the container take full width on smaller screens */
-        padding: 0 20px; /* Add padding to give some breathing space */
+        width: 100%;
+        padding: 0 20px;
     }
 
     .about-img {
