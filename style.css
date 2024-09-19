@@ -239,7 +239,10 @@ html {
         flex-direction: column; /* Stack the buttons vertically on very small screens */
         width: 100%;
         height: auto;
-        margin-bottom: 10px;
+    }
+
+    .home-content .btn-box a {
+        margin-bottom: 10px;;
     }
 
     .home {
