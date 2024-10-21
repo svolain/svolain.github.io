@@ -30,16 +30,9 @@ html {
     padding: 20px 10%;
     background: transparent;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     z-index: 100;
-}
-
-.logo {
-    font-size: 25px;
-    color: #ebebeb;
-    text-decoration: none;
-    font-weight: 600;
 }
 
 .navbar a {
@@ -78,16 +71,13 @@ html {
     position: relative;
     font-size: 50px;
     font-weight: 700;
+    color: #f7c346;
 }
 
 .home-content h3 {
     font-size: 28px;
     font-weight: 700;
-}
-
-.home-content p {
-    font-size: 16px;
-    margin: 20px 0 40px;
+    margin-bottom: 50px;
 }
 
 .home-content h1::before,
@@ -105,13 +95,15 @@ html {
 
 .home-content .btn-box {
     display: flex;
+    flex-direction: column;
     width: 100%;
     max-width: 400px;
     border-radius: 15px;
     overflow: hidden;
+    gap: 10px;
 }
 
-.btn-left, .btn-right {
+.btn-out, .btn-in {
     flex: 1;
     padding: 15px;
     text-align: center;
@@ -124,22 +116,22 @@ html {
     transition: background-color 0.3s ease;
 }
 
-.btn-left {
+.btn-out {
     border-right: 2px solid #f7c346;
 }
 
-.btn-left:hover, .btn-right:hover {
+.btn-out:hover {
     background-color: #e8971c;
 }
 
 
-.btn-right {
+.btn-in {
     background-color: transparent;
     color: #f7c346;
     border: 2px solid #f7c346;
 }
 
-.btn-right:hover {
+.btn-in:hover {
     background-color: #d88a1e;
     color: white;
 }
@@ -157,17 +149,17 @@ html {
     width: 40px;
     height: 40px;
     background: transparent;
-    border: 2px solid #f7c346;
+    border: 2px solid #ebebeb;
     border-radius: 50%;
     font-size: 20px;
-    color: #f7c346;
+    color: #ebebeb;
     text-decoration: none;
     transition: 0.3s;
     margin: 0 5px;
 }
 
 .home-sci a:hover {
-    background-color: #e0aa30;
+    background-color: #d1d1d1;
 }
 
 .about {
@@ -306,7 +298,27 @@ html {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
+    .header {
+        padding: 10px 5%;
+    }
+
+    .navbar a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) { 
+
+    body {
+        padding-top: 60px; /* Less padding for smaller headers */
+    }
+
+    .navbar a {
+        font-size: 12px; /* Smaller font for links */
+        padding: 5px 10px; /* Tighter padding for more compact navbar */
+    }
+
     .home-content .btn-box {
         flex-direction: column;
         width: 100%;
