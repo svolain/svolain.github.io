@@ -306,17 +306,29 @@ html {
     .navbar a {
         font-size: 16px;
     }
+
+    .home-content .btn-box {
+        flex-direction: column;
+        width: 70%;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
 }
 
 @media (max-width: 480px) { 
 
     body {
-        padding-top: 60px; /* Less padding for smaller headers */
+        padding-top: 60px;
+    }
+
+    .home h1 {
+        font-size: 14vw;
     }
 
     .navbar a {
-        font-size: 12px; /* Smaller font for links */
-        padding: 5px 10px; /* Tighter padding for more compact navbar */
+        font-size: 12px;
+        padding: 2px 1px;
     }
 
     .home-content .btn-box {
